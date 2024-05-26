@@ -1,0 +1,14 @@
+[package]
+name = "redis-wrapper"
+version = "0.1.0"
+edition = "2021"
+description = "A simple crate to interact with Redis"
+repository = "https://github.com/whohideonbug/redis-handler"
+license = "MIT"
+
+[dependencies]
+redis = { version = "0.25.2", features = [
+    "tokio-comp",
+    "tokio-native-tls-comp",
+] }
+
